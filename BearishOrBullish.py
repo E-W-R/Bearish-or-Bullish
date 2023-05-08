@@ -1,3 +1,5 @@
+## Original Script, app was rewritten in Shiny.
+
 from tkinter import *
 from tkinter import ttk
 from PIL import Image, ImageTk, ImageOps
@@ -72,7 +74,6 @@ def mathify():
                         for j in range(height):
                             r, g, b = pix[i,j]
                             if isBear(r, g, b):
-                                #out.putpixel((i,j), (r,g,b))
                                 B[i][j] = True
 
                 def averageColour(lop):
